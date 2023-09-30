@@ -1,0 +1,529 @@
+<!DICTYPE html>
+	<html lan="eng">
+	<head>
+		<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+		<link rel="shortcut icon" type="image/png" href="food.png">
+		<link rel="stylesheet" type="text/css" href="website1.css">
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+		<script src="https://code.jquery.com/jquery-3.7.0.js" integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM=" crossorigin="anonymous">
+		</script>
+		<script> 
+             function vname(){
+             	var name=document.myform.name1.value;
+             	if(name==null || name==""){ 
+             		alert("please enter the name");
+             		return false;
+
+             	}
+             }
+             </script>
+             <script>
+			function vdate(){
+				var curdate=new Date();
+				var dob2=new Date(document.myform.date1.value);
+				if(dob2>curdate){
+					alert("please enter the valid date");
+					return false
+
+					}
+
+				}
+			
+		</script>
+			<script>
+			function vemail(){
+				var email2=document.myform.email1.value();
+				var atposition=email2.indexOf("@");
+				var dotposition=email2.lastIndexOf(".");
+				if(atposition<1 ||dotposition<atposition+2 || dotposition+2>=email2.length){
+					alert("please enter email id")
+					return false
+				}
+			}
+
+		</script>
+		<script>
+		
+		function vnum(){
+			var num1=document.myform.num1.value;
+			if(num1.length==10){
+				return true
+			}else{
+				alert("Enter valid number")
+				return false
+			}
+
+
+		}
+	</script>
+	<script>
+			  $(document).ready(function(){
+				$("button").click(function(){
+					$("p").toggle("fast"); 
+
+				});
+			});
+		
+		</script>
+	<div class="col-xl-3">
+	</head>
+	<body>
+		<!--header section start-->
+		<header>
+			<a href="#" class="logo"><img src="food.webp" height=10% width=10%></a>
+			<nav class="navbar">
+				<a href="home" class="active">HOME</a>
+				<a href="home">ABOUT</a>
+				<a href="home">MENU</a>
+				<a href="home">TEAM</a>
+				<a href="home">RESERVATION</a>
+				<a href="home">BLOG</a>
+			</nav>
+			<div class="icons">
+				<i class="fas fa-bars" id="menu"></i>
+				<i class="fas fa-search"></i>
+				<i class="fas fa-heart"></i>
+				<i class="fas fa-shopping-cart"></i>
+			</div>
+				
+
+		</header>
+		<!--header section start-->
+		<!--slide selection start-->
+		  <div class="home" id="home">
+		  	<div class="swiper home-slider">
+		  		<div class="swiper-wrapper wrapper">
+		  			<div class="swiper-slide slide slide1">
+		  				<div class="content">
+		  					<img src="t1.png" height=20%>
+		  					<h3>delicious royate</h3>
+		  					<h1>gift voucher</h1>
+		  					<p>
+		  						give away your beloved cutomers
+		  					</p>
+		  					<a href="#" class="btn">order now</a>
+		  				</div>
+		  			</div>
+		  			<div class="swiper-slide slide slide2">
+		  				<div class="content">
+		  					<img src="t2.png" height=20%>
+		  					<h3>sales of 10% this dish</h3>
+		  					<h1>the fresh</h1>
+		  					<p>
+		  						food resturant
+		  					</p>
+		  					<a href="#" class="btn">order now</a>
+		  				</div>
+		  			</div>
+		  			<div class="swiper-slide slide slide3">
+		  				<div class="content">
+		  					<img src="ft.png" height=20%>
+		  					<h3>we are open</h3>
+		  					<h1>fresh fruits</h1>
+		  					<p>
+		  						you will love it
+		  					</p>
+		  					<a href="#" class="btn">order now</a>
+		  				</div>
+		  			</div>
+		  		</div>
+		  		<div class="swiper-pagination"></div>
+
+
+		  	</div>
+
+		  	</div>
+		  </div>
+		  <!--slider section ends-->
+		  <section class="welcome" id="about">
+		   <h1 class="heading">WELCOME TO ROYATE</h1>
+		   <center><h3 class="sub-heading"> ~ Luxury & Quality ~ </h3></center>
+		   <div class="box-container">
+		   	<div class="box">
+		   		<div class="image">
+		   			<img src="images\t5.jpg">
+		   		</div>
+		   		<div class="content">
+		   			<h3>PROFESSIONAL LEVEL</h3>
+		   			<P>nor again is there anyone who loves or pursues or desires to 
+		   				obtain pain of itself,because it is pain, but because occationally
+		   			curcumstances occur</P>
+		   			<a href="#" class="btn">Read More</a>
+		   	</div>
+		   </div>
+		   <div class="box">
+		   		<div class="image">
+		   			<img src="images\t6.jpg">
+		   		</div>
+		   		<div class="content">
+		   			<h3>FRESH FOOD GUARENTEED</h3>
+		   			<P>nor again is there anyone who loves or pursues or desires to 
+		   				obtain pain of itself,because it is pain, but because occationally
+		   			curcumstances occur</P>
+		   			<a href="#" class="btn">Read More</a>
+		   		</div>
+		   	</div>
+		   	<div class="box">
+		   		<div class="image">
+		   			<img src="images\t7.jpg">
+		   		</div>
+		   		<div class="content">
+		   			<h3>THE MENU IS PLENTIFUL</h3>
+		   			<P>nor again is there anyone who loves or pursues or desires to 
+		   				obtain pain of itself,because it is pain, but because occationally
+		   			curcumstances occur</P>
+		   			<a href="#" class="btn">Read More</a>
+		   </div>
+		  </section>
+		  <!--our menu section start-->
+		  <section class="our-menu">
+		  	<h1 class="heading">our food menu</h1>
+		  	<center><h3 class="sub-heading">~ see what we offer ~</h3></center>
+		  	<div class="menu-container">
+		  		<div class="item">
+		  			<div class="item-name">
+		  				<h2>Main course</h2>
+		  				<img src="">
+		  			</div>
+		  			<div class="item-body">
+		  				<div class="item-menu">
+		  					<h3>Super-Delicious Zuppa Toscana</h3>
+		  					<span class="dots"></span>
+		  					<h3>$40</h3>
+		  					<ul>
+		  						<li><a href="#">Chicken</a></li>
+		  						<li><a href="#">Italian</a></li>
+		  						<li><a href="#">Sausage</a></li>
+		  						<li><a href="#">Spinach</a></li>
+		  					</ul>
+		  				</div>
+		  				<div class="item-menu">
+		  					<h3>Super-Delicious Zuppa Toscana</h3>
+		  					<span class="dots"></span>
+		  					<h3>$26</h3>
+		  					<ul>
+		  						<li><a href="#">Mushrooms</a></li>
+		  						<li><a href="#">Italian</a></li>
+		  						<li><a href="#">Sausage</a></li>
+		  						<li><a href="#">Spinach</a></li>
+		  					</ul>
+		  				</div>
+		  			</div>
+		  		</div>
+                   <div class="item">
+		  			<div class="item-name">
+		  				<h2>Soups and Salads</h2>
+		  				<img src="">
+		  			</div>
+		  			<div class="item-body">
+		  				<div class="item-menu">
+		  					<h3>Super-Delicious Zuppa Toscana</h3>
+		  					<span class="dots"></span>
+		  					<h3>$40</h3>
+		  					<ul>
+		  						<li><a href="#">Chicken</a></li>
+		  						<li><a href="#">Italian</a></li>
+		  						<li><a href="#">Sausage</a></li>
+		  						<li><a href="#">Spinach</a></li>
+		  					</ul>
+		  				</div>
+		  				<div class="item-menu">
+		  					<h3>Super-Delicious Zuppa Toscana</h3>
+		  					<span class="dots"></span>
+		  					<h3>$26</h3>
+		  					<ul>
+		  						<li><a href="#">Mushrooms</a></li>
+		  						<li><a href="#">Italian</a></li>
+		  						<li><a href="#">Sausage</a></li>
+		  						<li><a href="#">Spinach</a></li>
+		  					</ul>
+		  				</div>
+		  			</div>
+		  		</div>
+              <div class="item">
+		  			<div class="item-name">
+		  				<h2>Drinks</h2>
+		  				<img src="">
+		  			</div>
+		  			<div class="item-body">
+		  				<div class="item-menu">
+		  					<h3>Super-Delicious Zuppa Toscana</h3>
+		  					<span class="dots"></span>
+		  					<h3>$40</h3>
+		  					<ul>
+		  						<li><a href="#">Chicken</a></li>
+		  						<li><a href="#">Italian</a></li>
+		  						<li><a href="#">Sausage</a></li>
+		  						<li><a href="#">Spinach</a></li>
+		  					</ul>
+		  				</div>
+		  				<div class="item-menu">
+		  					<h3>Super-Delicious Zuppa Toscana</h3>
+		  					<span class="dots"></span>
+		  					<h3>$26</h3>
+		  					<ul>
+		  						<li><a href="#">Mushrooms</a></li>
+		  						<li><a href="#">Italian</a></li>
+		  						<li><a href="#">Sausage</a></li>
+		  						<li><a href="#">Spinach</a></li>
+		  					</ul>
+		  				</div>
+		  			</div>
+		  		</div>
+               <div class="item">
+		  			<div class="item-name">
+		  				<h2>Desserts</h2>
+		  				<img src="">
+		  			</div>
+		  			<div class="item-body">
+		  				<div class="item-menu">
+		  					<h3>Super-Delicious Zuppa Toscana</h3>
+		  					<span class="dots"></span>
+		  					<h3>$40</h3>
+		  					<ul>
+		  						<li><a href="#">Chicken</a></li>
+		  						<li><a href="#">Italian</a></li>
+		  						<li><a href="#">Sausage</a></li>
+		  						<li><a href="#">Spinach</a></li>
+		  					</ul>
+		  				</div>
+		  				<div class="item-menu">
+		  					<h3>Super-Delicious Zuppa Toscana</h3>
+		  					<span class="dots"></span>
+		  					<h3>$26</h3>
+		  					<ul>
+		  						<li><a href="#">Mushrooms</a></li>
+		  						<li><a href="#">Italian</a></li>
+		  						<li><a href="#">Sausage</a></li>
+		  						<li><a href="#">Spinach</a></li>
+		  					</ul>
+		  				</div>
+		  			</div>
+		  		</div>
+
+		  	</div>
+		  	<!--our team section start-->
+
+		  	</section>
+		  		<section class="our-team" id="item">
+		  			<h1 class="heading">Our talented chef</h1>
+		  			<center>
+		  				<h3 class="sub-heading">~ Experience $ Enthusiam ~</h3>
+
+		  			</center>
+		  			<div class="our-chef">
+		  				<div class="item">
+		  					<div class="image">
+		  						<img src="images\chef5.jpg">
+		  					</div>
+		  					<div class="chef-info">
+		  						<div>
+		  							<h3>Jerry Suni</h3>
+		  							<span>master chef</span>
+		  							<ul>
+		  								<li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+		  								<li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+		  								<li><a href="#"><i class="fa-brands fa-whatsapp"></i></a></li>
+		  								<li><a href="#"><i class="fa-brands fa-linkedin-in"></i></a></li>
+		  							</ul>
+		  						</div>
+		  					</div>
+		  				</div>
+		  				<div class="item">
+		  					<div class="image">
+		  						<img src="images\chef4.jpg">
+		  					</div>
+		  					<div class="chef-info">
+		  						<div>
+		  							<h3>Corol rowson</h3>
+		  							<span>master chef</span>
+		  							<ul>
+		  								<li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+		  								<li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+		  								<li><a href="#"><i class="fa-brands fa-whatsapp"></i></a></li>
+		  								<li><a href="#"><i class="fa-brands fa-linkedin-in"></i></a></li>
+		  							</ul>
+		  						</div>
+		  					</div>
+		  				</div>
+		  				<div class="item">
+		  					<div class="image">
+		  						<img src="images\chef4.jpg">
+		  					</div>
+		  					<div class="chef-info">
+		  						<div>
+		  							<h3>Taylor mccoy</h3>
+		  							<span>master chef</span>
+		  							<ul>
+		  								<li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+		  								<li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+		  								<li><a href="#"><i class="fa-brands fa-whatsapp"></i></a></li>
+		  								<li><a href="#"><i class="fa-brands fa-linkedin-in"></i></a></li>
+		  							</ul>
+		  						</div>
+		  					</div>
+		  				</div>
+		  			</div>
+		  	</section>
+		  <!--our menu section end-->
+		  <!--reservation section start-->
+		  <div class="reservation" id="reservation">
+		  	<div class="image">
+		  	</div>
+		  	<div class="form">
+		  		<h1 class="heading">Book a Table</h1>
+		  		<center><h3 class="sub-heading"> ~ check out our place ~</h3></center>
+                <form name="myform" method="post" return onsubmit="return vname()" return onsubmit="return vnum()" return onsubmit="return vemail()" return onsubmit="return vdate()">
+                	<div class="form-holder">
+                		<div>
+                			<select required>
+                				<option>1 people</option>
+                				<option>2 people</option>
+                				<option>3 people</option>
+                				<option>4 people</option>
+                			</select>
+                			<input type="text" name="" placeholder="Time" required>
+                			
+                			<input type="text" name="num1" placeholder="Phone" required>
+                		</div>
+                		<div>
+                			
+                			<input type="text" name="date1" placeholder="Date" required>
+                		
+                			
+                			<input type="text" name="name1" pattern="[a-zA-Z ]{3,}" title="Name must contain alphabets only" placeholder="Name" required>
+                		
+                		
+                			<input type="email" name="email1"placeholder="email" required>
+                		
+
+                			
+                		</div>
+                	</div>
+                	<center><a href="order.html"><input type="submit"> Book now</input></a></center>
+
+                </form>
+		  	</div>
+		  </div>
+		   <!--reservation section end-->
+		   
+		   <!--news section start-->
+		   <section class="blog welcome" id="blog">
+		   	<h1 class="heading">Latest news</h1>
+		   	<center><h3 class="sub-heading">~ create articles ~</h3></center>
+		   	<div class="box-container">
+		   		<div class="box">
+		   			<div class="image">
+		   				<img src="images\s1.webp">
+		   			</div>
+		   			<div class="content">
+		   				<h3>PROFESSIONAL LEVEL</h3>
+		   				<p>nor again is there anyone who loves or pursues or desires to 
+		   				obtain pain of itself,because it is pain, but because occationally
+		   			curcumstances occur</P>
+		   			<a href="#">READ MORE</a>
+		   			
+
+		   		</div>
+		   	</div>
+		   	<div class="box">
+		   			<div class="image">
+		   				<img src="images\s2.jpg">
+		   			</div>
+		   			<div class="content">
+		   				<h3>FRESH FOOD GUARENTEED</h3>
+		   				<p>nor again is there anyone who loves or pursues or desires to 
+		   				obtain pain of itself,because it is pain, but because occationally
+		   			curcumstances occur</P>
+		   			<a href="#">READ MORE</a>
+		   		
+
+		   		</div>
+		   	</div>
+		   	<div class="box">
+		   			<div class="image">
+		   				<img src="images\s3.jpg">
+		   			</div>
+		   			<div class="content">
+		   				<h3>THE MENU IS PLENTIFUL</h3>
+		   				<p>nor again is there anyone who loves or pursues or desires to 
+		   				obtain pain of itself,because it is pain, but because occationally
+		   			curcumstances occur</P>
+		   			<a href="#">READ MORE</a>
+		   		
+
+		   		</div>
+		   	</div>
+       </div>
+</section>
+		   </section>
+		   
+		   <!--news section end-->
+		   <!--footer section start-->
+		   <section class="footer">
+		   	<img src="" class="logo">
+		   	<div class="container">
+		   		<div><h3>ABOUT US</h3>
+		   			<p>Give Me Feedback</p>
+		   		</div>
+		   		<div>
+		   		<h3>GET NEWS $ OFFERS</h3>
+		   		<input type="email" name="" placeholder="enter the email">
+		   		<ul>
+		   			<li><a href="#"><i class="fa-brands fa-twitter" onclick=""></i></a></li>
+		   			<li><a href="https://instagram.com/sravani587123?igshid=MzNlNGNkZWQ4Mg=="><i class="fa-brands fa-instagram"></i></a></li>
+		   			<li><a href="https://web.whatsapp.com/"><i class="fa-brands fa-whatsapp"></i></a></li>
+		   			<li><a href="www.linkedin.com/in/
+katikireddy-sireesha-b1982227b
+
+"><i class="fa-brands fa-linkedin-in"></i></a></li>
+		   		</ul>
+		   	</div>
+		   	<div>
+		   		<h3>CONTACT US</h3>
+		   		<span>Creative Networks tohana</span>
+		   		<span> + (91) 7287993538</span>
+		   		<span>SireeshaKatikireddy@gmail.com</span>
+		   		<span>www.sireesha.in</span>
+		   		<p>your code:12345</p>
+		   		<button type="button" class="btn">get code</button>
+		   	</div>
+
+		   	</div>
+		   	<p>&copy;2022 Reserved by Sireesha katikireddy</p>
+		   </section>
+		   <!--footer section end-->
+		   <!--jump to top-->
+		   <a href="#"><button class="topbtn"><i class="fa-solid fa-angle-up"></i></button></a>
+
+
+		   
+		<script>
+			let menu=document.querySelector('#menu');
+			let navbar=document.querySelector('.navbar');
+			menu.onlick=()=>{
+				menu.classList.toggle('fa-times');
+				navbar.classList.toggle('active');
+			}
+		</script>
+		<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper(".home-slider", {
+      spaceBetween: 30,
+      centeredSlides: true,
+      autoplay: {
+        delay: 7500,
+        disableOnInteraction: false,
+      },
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      loop:true,
+    });
+  </script>
+  <div>
+	</body>
+	</html>
